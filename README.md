@@ -19,8 +19,8 @@ This project implements the Fast Gradient Sign Method (FGSM) and its Gaussian no
 
 ### 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/FGSM-NeuralSiegeKit.git
-cd FGSM-NeuralSiegeKit
+git clone https://github.com/aaqib-ahmed-nazir/FGSM-AdversarialArsenal.git
+cd FGSM-AdversarialArsenal
 ```
 
 ### 2. Set up a Python virtual environment (recommended):
