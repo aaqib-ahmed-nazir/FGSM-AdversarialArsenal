@@ -3,6 +3,32 @@
 ## Project Overview
 This project implements the Fast Gradient Sign Method (FGSM) and its Gaussian noise variant for adversarial attacks on neural networks. It includes a REST API for running attacks on input images and evaluating model robustness.
 
+## Test Results and Examples
+
+### Results Images
+
+#### Test Case 1: Digit 0 (img_7.jpg)
+Original Image: ![Original Digit 2](test_images/img_7.jpg)
+Adversarial Result: ![Adversarial Result for Digit 0](outputs/api_test_on_0.png)
+
+#### Test Case 2: Digit 9 (img_3.jpg)
+Original Image: ![Original Digit 9](test_images/img_3.jpg)
+Adversarial Result: ![Adversarial Result for Digit 9](outputs/api_test_on_9.png)
+
+#### Test Case 3: Digit 3 (img_5.jpg)
+Original Image: ![Original Digit 3](test_images/img_5.jpg)
+Adversarial Result: ![Adversarial Result for Digit 3](outputs/api_test_on_3.png)
+
+#### Test Case 4: Digit 7 (img_6.jpg)
+Original Image: ![Original Digit 7](test_images/img_6.jpg)
+Adversarial Result: ![Adversarial Result for Digit 7](outputs/api_test_on_7.png)
+
+Each adversarial result image shows:
+- The original input image
+- The generated adversarial example
+- The model's predictions and confidence scores for both images
+- The attack parameters used (epsilon value)
+
 ## Requirements
 - Python 3.9+
 - PyTorch 2.0+
@@ -54,32 +80,6 @@ This will:
 python app_fgsm.py
 ```
 The server will start at http://localhost:8000
-
-## Test Results and Examples
-
-### Results Images
-
-#### Test Case 1: Digit 0 (img_7.jpg)
-Original Image: ![Original Digit 2](test_images/img_7.jpg)
-Adversarial Result: ![Adversarial Result for Digit 0](outputs/api_test_on_0.png)
-
-#### Test Case 2: Digit 9 (img_3.jpg)
-Original Image: ![Original Digit 9](test_images/img_3.jpg)
-Adversarial Result: ![Adversarial Result for Digit 9](outputs/api_test_on_9.png)
-
-#### Test Case 3: Digit 3 (img_5.jpg)
-Original Image: ![Original Digit 3](test_images/img_5.jpg)
-Adversarial Result: ![Adversarial Result for Digit 3](outputs/api_test_on_3.png)
-
-#### Test Case 4: Digit 7 (img_6.jpg)
-Original Image: ![Original Digit 7](test_images/img_6.jpg)
-Adversarial Result: ![Adversarial Result for Digit 7](outputs/api_test_on_7.png)
-
-Each adversarial result image shows:
-- The original input image
-- The generated adversarial example
-- The model's predictions and confidence scores for both images
-- The attack parameters used (epsilon value)
 
 ## Implementation Details
 
